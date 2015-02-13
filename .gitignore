@@ -154,3 +154,4 @@ buildinfo.cpp
 *.wixobj
 *.wixpdb
 DriverInclude.wxs
+db/mongo
