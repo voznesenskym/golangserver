@@ -116,7 +116,8 @@ func (u *UserResource) removeUser(request *restful.Request, response *restful.Re
 func main() {
 
 	mongoDB := "gotest"
-	session, err := mgo.Dial("localhost:27017")
+	// session, err := mgo.Dial("localhost:27017")
+	session, err := mgo.Dial("46.28.202.117:27017")
 	if err != nil {
 		panic(err)
 	}
