@@ -132,7 +132,7 @@ func main() {
 	m.Register(wsContainer)
 	u.Register(wsContainer)
 
-	log.Printf("start listening on localhost:8080")
-	server := &http.Server{Addr: ":8080", Handler: wsContainer}
+	log.Printf("start listening on localhost:5000")
+	server := &http.Server{Addr: ":5000", Handler: wsContainer}
 	log.Fatal(server.ListenAndServe())
 }

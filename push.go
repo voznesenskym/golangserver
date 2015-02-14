@@ -21,7 +21,7 @@ func sendPush(token string, id bson.ObjectId) {
 	pn.DeviceToken = deviceToken
 	pn.AddPayload(payload)
 
-	client := apns.NewClient("gateway.sandbox.push.apple.com:2195", "HTTPChatCert.pem", "HTTPChatKey.pem")
+	client := apns.NewClient("gateway.sandbox.push.apple.com:2195", "cert.pem", "key.pem")
 	resp := client.Send(pn)
 
 	alert, _ := pn.PayloadString()
